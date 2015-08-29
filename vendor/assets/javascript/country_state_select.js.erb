@@ -30,7 +30,7 @@ $(document).on('ready page:load', function () {
       $html+='<option selected=\"selected\" >'+data[0][1]+'</option>';
       
       for ( var idcount = 1; idcount < data.length; idcount++) {
-	    $html+='<option>'+data[idcount][1]+'</option>';
+	    $html+='<option'+' value='+idCount+'>'+data[idcount][1]+'</option>';
 	  }
       $html+='</select>';		   
     }
